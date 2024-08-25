@@ -1,0 +1,124 @@
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6b81;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    text-shadow: 3px 3px #ff4757;
+}
+
+section {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#gallery .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#gallery img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    transition: transform 1.5s ease;
+}
+
+#gallery img:hover {
+    transform: rotate(360deg);
+}
+
+#videos .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#confessions {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+#confessions textarea {
+    width: 80%;
+    padding: 15px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 2px solid #ff6b81;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#confessions button {
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    background-color: #ff6b81;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#confessions button:hover {
+    background-color: #ff4757;
+    box-shadow: 0px 4px 10px rgba(255, 99, 132, 0.5);
+}
+
+#confession-list {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    color: #ffffff;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding: 15px;
+    background-color: #ff4757;
+    color: #ffffff;
+    font-size: 1rem;
+    text-shadow: 2px 2px #ff6b81;
+}
+
+.heart-emoji {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: float 5s infinite ease-in-out;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+}

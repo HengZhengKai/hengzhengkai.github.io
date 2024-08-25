@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Bieber Fan Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Justin Bieber's World! ❤️</h1>
+    </header>
+
+    <section id="gallery">
+        <h2>Justin Bieber Gallery ❤️</h2>
+        <div class="image-container">
+            <img src="pictures/justin1.jpg" alt="Justin Bieber">
+            <img src="pictures/justin2.jpg" alt="Justin Bieber">
+            <img src="pictures/justin3.jpg" alt="Justin Bieber">
+            <img src="pictures/justin4.jpg" alt="Justin Bieber">
+            <img src="pictures/justin5.jpg" alt="Justin Bieber">
+            <img src="pictures/justin6.jpg" alt="Justin Bieber">
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>Watch Justin Bieber's Videos ❤️</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kffacxfA7G4" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kTJczUoc26U" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tQ0yjYUFKAE" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="confessions">
+        <h2>My Confessions to Justin ❤️</h2>
+        <form>
+            <textarea id="confession" placeholder="Write your confession here..." rows="5"></textarea>
+            <button type="button" onclick="submitConfession()">Submit</button>
+        </form>
+        <div id="confession-list"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Justin Bieber Fan Page. All Rights Reserved. ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
